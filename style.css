@@ -1,0 +1,156 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    background-color: var(--Stone-100);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.825rem;
+}
+
+main {
+    max-width: min(90%, 500px);
+    padding: 1.2rem;
+    background-color: var(--White);
+    border-radius: 12px;
+}
+
+.hero-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.main-title {
+    font-family: "Young Serif", serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin: 1.2rem 0;
+    color: var(--Stone-900);
+}
+
+.subtitle {
+    color: var(--Stone-600);
+}
+
+.time {
+    background-color: var(--Rose-50);
+    margin: 1.2rem 0;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.time p {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--Rose-800);
+}
+
+ul, ol {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+ol {
+    counter-reset: step;
+    list-style-position: outside;
+}
+
+ul li {
+    margin-bottom: 8px;
+    color: var(--Stone-600);
+}
+
+ol li {
+    padding-left: 8px;
+    margin-bottom: 8px;
+    color: var(--Stone-600);
+}
+
+ol li::marker {
+    color: var(--Brown-800);
+    font-weight: 700;
+}
+
+h3 {
+    font-family: "Young Serif", serif;
+    color: var(--Brown-800);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--Stone-150);
+    margin: 1.2rem 0;
+}
+
+.nutrition .subtitle {
+    margin: 1rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: left;
+}
+
+th {
+    color: var(--Brown-800);
+    font-weight: 700;
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+td {
+    color: var(--Stone-600);
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+tr:last-of-type th,
+tr:last-of-type td {
+  border-bottom: none;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media (max-width: 640px) {
+    main {
+        padding: 0;
+    }
+    
+    section, .time {
+        margin: 1.5rem;
+    }
+}
