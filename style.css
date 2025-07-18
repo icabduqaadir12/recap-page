@@ -135,7 +135,7 @@ td {
 }
 
 th {
-  text-align: right;
+  text-align: left;
   color: var(--Brown-800);
   font-weight: 700;
 }
